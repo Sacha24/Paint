@@ -33,6 +33,7 @@ body {
   left: 25%;
   top: 2%;
   background-color: white;
+  overflow: hidden;
 }
 
 #canvasSize {
