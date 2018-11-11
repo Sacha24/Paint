@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="JavaScript_ Paint 95.css" />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="size-container">
+        <img src="logo.png" alt="logo" style="height:100px;width:160px;position:relative;left:1%;top:15px">
+        <select id="canvasSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <div class="buttons">
+            <button id="save">Save</button>
+            <button id="load">Load</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div class="canvas1" id="canvas" onmousedown="draw()"></div>
+        <div class="pallet" id="colors">
+            <input id="white" type="button" class="white color">
+            <img id="white" src="eraser.png" alt="rubber">
+            <input id="blue" type="button" class="blue color">
+            <input id="green" type="button" class="green color">
+            <input id="yellow" type="button" class="yellow color">
+            <input id="red" type="button" class="red color">
+            <input id="orange" type="button" class="orange color">
+            <input id="black" type="button" class="black color">
+        </div>
+        <div id="size">
+            <button id="down">-</button>
+            <span id="sizePx"></span>
+            <button id="up">+</button>
+        </div>
+        <select id="shape">
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+        </select>
+    </div>
+
+    <script src="JavaScript_ Paint 95.js"></script>
+</body>
+
+</html>
