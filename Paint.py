@@ -1,8 +1,9 @@
 from bottle import route, template
+from sys import argv
 import bottle
 
 
-@route('/', method='GET')
+@route('/')
 def index():
     return template('Paint.html', root="")
 
@@ -23,7 +24,7 @@ def images(filename):
 
 
 def main():
-    bottle.run(host='localhost', port=7001)
+    bottle.run(host='0.0.0.0', port=argv[1])
 
 
 if __name__ == '__main__':
